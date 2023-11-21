@@ -1,0 +1,55 @@
+<!--------------------------------------
+
+	Name: Man Wah Li
+	Date: Jun 20, 2022
+	Description: AJAX Using Open Data
+
+---------------------------------------->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Winnipeg's Park Search</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+	<script src="park.js"></script>
+</head>
+<body>
+	<section class="section">
+		<div class="container">
+			<header>
+				<h1 class="title">Winnipeg's Park and Open Spaces</h1>
+				<h2 class="subtitle">Search over thirteen hundred park and open spaces on City of Winnipeg public property.</h2>
+			</header>
+			<br>
+			<form class="box">
+				<div class="field">
+					<label class="label">Search for Parks by Community Centre Areas</label>
+				</div>
+				<div class="field has-addons">
+					<div class="control is-expanded">
+						<input class="input is-full-width" name="input" id="input">
+					</div>
+					<div class="control">
+						<button class="button is-primary" type="submit">Search</button>
+					</div>
+				</div>
+				<div class="field">
+					<p class="help">Try searching for <a class="query" href="#Downtown">Downtown</a>, or <a class="query" href="#Inkster">Inkster</a>, or <a class="query" href="#Transcona">Transcona</a>.</p>
+				</div>
+			</form>
+			<br>
+			<h2 class="explanation subtitle"></h2>
+			<br>
+			<table class="table is-fullwidth is-hoverable trees">
+				<thead>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+			<p> Park data provided by the <a href="https://data.winnipeg.ca/">City of Winnipeg Open Data catalogue</a>. </p>
+		</div>
+	</section>
+</body>
+</html>
